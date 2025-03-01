@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <nav>
+                <div class="navbar bg-base-100 shadow-sm flex justify-between items-center p-4 rounded-lg">
+                    <div class="flex items-center gap-2">
+                        <img class="w-12" src="./assets/logo.png" alt="Logo">
+                        <a class="text-xl">Dev<span class="font-bold">Board</span></a>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-4">
+                            <button id="back-btn" class="btn btn-active btn-primary">Back to desk</button>
+                            
+            </nav>
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title font-semibold">Question-1: What are the different ways to select an </div>
+                <div class="collapse-content text-sm">The different ways to select an element in the DOM are:
+                   1. By ID - document.getElementById("id") 
+                   2. By Class Name - document.getElementsByClassName("class")
+                   3. By Tag Name - document.getElementsByTagName("tag")
+                   4. By Name Attribute - document.getElementsByName("name")
+                  5.  By CSS Selector -
+                                     1. Single element: document.querySelector("selector")
+                                     2. Multiple elements: document.querySelectorAll("selector")
+            </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+                <div class="collapse-content text-sm">
+                    innerHTML: Returns or sets the HTML content inside an element, including tags.
+                    innerText: Returns or sets only the visible text inside an element, ignoring hidden elements and formatting.
+                    textContent: Returns or sets all text inside an element, including hidden text, but without parsing HTML tags.
+                </div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+                <div class="collapse-content text-sm">Event delegation in the DOM is a technique where a parent element handles events for its child elements using event bubbling. Instead of adding event listeners to multiple child elements, a single listener is added to their common ancestor, improving performance and simplifying event management.</div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+                <div class="collapse-content text-sm">Event bubbling is a DOM event propagation method where an event starts from the target element and moves up to its ancestors. For example, if you click a button inside a "div", the event first triggers on the button, then bubbles up to the "div", and then to higher ancestors like "body". This allows event delegation and efficient event handling.</div>
+              </div>
+              <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+                <div class="collapse-content text-sm">
+                    1. Create an element: document.createElement("tagName"), 
+                    2. Add an element- Append to a parent: parent.appendChild(child), Insert before another element: parent.insertBefore(newElement, referenceElement),  
+                    3. Remove an element: element.remove(), parent.removeChild(child).
+
+                </div>
+              </div>
+        </section>
+    </header>
+    <script src="./script/dev.js"></script>
+</body>
+</html>
