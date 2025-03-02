@@ -21,11 +21,13 @@
                         <!-- Task Assigned Section -->
                         <div class="flex items-center gap-2 bg-gray-200 px-3 py-2 rounded-lg">
                             <span class="text-lg font-bold">00</span>
-                            <span class="text-green-500 text-xl">✔️</span>
+                            <span class="text-green-500 text-xl"><img src="./assets/checkbox.png" alt=""></span>
                         </div>
                         <!-- Theme Toggle Button -->
                         <label class="swap swap-rotate">
                             <input type="checkbox" id="theme-toggle" />
+                            <img id="theme-btn" src="./assets/theme-btn.png" alt="Theme Toggle" class="w-6 h-6 cursor-pointer" />
+                            
                             <svg class="swap-on fill-current w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                 <path d="M5.64 17.66A9 9 0 0112 3a9 9 0 010 18 9 9 0 01-6.36-2.64z"></path>
                             </svg>
@@ -33,6 +35,7 @@
                                 <path d="M12 3v1m0 16v1m8-9h1M3 12H2m15.36 6.36l-.71-.71M6.35 6.35l-.7-.7m0 12.72l.7-.7m12.02-.02l-.7.7"></path>
                             </svg>
                         </label>
+                        
                     </div>
                 </div>
             </div>
@@ -42,16 +45,22 @@
     <div class="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-md mt-6">
         <!-- Header Section -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-            <div class="p-4 bg-white rounded-lg shadow flex items-center justify-center flex-col text-center">
-                <span class="text-sm font-semibold text-gray-600">Task Assigned</span>
-                <h3 class="text-3xl font-bold">06</h3>
-            </div>
+            <div class="p-4 bg-white rounded-lg shadow flex items-center justify-center text-center">
+                <img src="./assets/checkbox.png" alt="" class="w-8 h-9 mr-4">
+                <div>
+                    <span class="text-sm font-semibold text-gray-600">Task Assigned</span>
+                    <h3 class="text-3xl font-bold">06</h3>
+                </div>
+            </div>            
             <div class="p-4 bg-blue-500 rounded-lg shadow text-white text-center flex items-center justify-center">
-                <h3 id="dis-btn" class="text-xl font-bold">📅 Discover Something New Today!</h3>
+                <img class="w-12 flex" src="./assets/board.png" alt="Board Icon">
+                <h3 id="dis-btn" class="text-xl font-bold"> Discover Something New Today!</h3>
             </div>
             <div class="p-4 bg-white rounded-lg shadow flex items-center justify-center flex-col text-center">
                 <span class="text-sm font-bold">Wed,</span>
-                <h3 class="text-2xl font-bold">📅 March 1, 2025</h3>
+                <h3 class="text-2xl font-bold flex items-center justify-center">
+                    <img src="./assets/calender.png" alt="" class="w-6 h-6 mr-2"> March 1, 2025
+                </h3>
             </div>
         </div>
 
